@@ -8,9 +8,9 @@ NB. explanation
 NB. this whole thing is a tacit expression, which means it doesn't explicitly refer to its arguments.
 NB. instead, it uses forks and hooks to implicitly route the arguments.
 NB. an explicit version, referring to the right argument as Y, would look like this:
-NB. 
+NB.
 
-NB. since J executes right-to-left, we can start with the rightmost expression: 
+NB. since J executes right-to-left, we can start with the rightmost expression:
 NB. (+&.*:/)
 NB. This parses like ((+&.*:)/) so let's consider the innermost parenthesized part first.
 NB. Essentially, this does sqrt(sum(square(y))), but in J this can be expressed as "sum under square",
@@ -28,7 +28,7 @@ NB.       (j./ 2 3)  is the same as   (2 j. 3), and yields the complex number 2j
 NB. From the J dictionary:
 NB. *y is _1 if y is negative, 0 if it is zero, 1 if it is positive;
 NB. more generally, *y is the intersection of the unit circle with the line
-NB. from the origin through the argument y in the complex plane. 
+NB. from the origin through the argument y in the complex plane.
 NB. so  (*j./ y)   is the normalized direction vector of y
 NB. real (+.) takes the real component of a complex number
 NB.  (+.@*j./ y) uses compose (@) to create a single verb from +. and *
