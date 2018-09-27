@@ -1,4 +1,5 @@
-/ run in the k/kona console
+/ print deck of cards
+/ run in the kona console
 / visit https://github.com/kevinlawler/kona to get the kona source && make
 
 / full solution to problem 1:
